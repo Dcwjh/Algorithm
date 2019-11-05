@@ -2,7 +2,7 @@ package Test;
 
 import java.util.Arrays;
 
-import static SortAlgorithm.QuickSort.quickSort;
+import static SortAlgorithm.InsertSort.insertSort;
 
 /**
  * @Description 基于对数器的测试：随机生成无数个可能性的数组对算法进行测试
@@ -81,7 +81,7 @@ public class ArraysJudges {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
            int[] arr3 = copyArray(arr1);
-            quickSort(arr2);
+            insertSort(arr2);
             comparator(arr3);
             if (!isEqual(arr2, arr3)) {
                 succeed = false;
@@ -97,7 +97,7 @@ public class ArraysJudges {
         int[] arr = generateRandomArray(maxSize, maxValue);
         System.out.println("排序前数组：");
         printArray(arr);
-        quickSort(arr);
+        insertSort(arr);
         System.out.println("排序后数组：");
         printArray(arr);
 

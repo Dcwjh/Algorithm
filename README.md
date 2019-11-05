@@ -16,6 +16,11 @@
 ## 排序
   - [经典快速排序](./src/SortAlgorithm/QuickSort.java)
   - [基于荷兰国旗的快速排序](./src/SortAlgorithm/NewQuickSort.java)
+  - [选择排序](./src/SortAlgorithm/SelectSort.java)
+  - [归并排序](./src/SortAlgorithm/MergeSort.java)
+  - [插入排序](./src/SortAlgorithm/InsertSort.java)
+  - [冒泡排序](./src/SortAlgorithm/BubbleSort.java)
+  
   
 ## 对数器
   - [判断数组排序](./src/Test/ArraysJudges.java)
