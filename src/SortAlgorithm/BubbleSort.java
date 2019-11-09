@@ -3,7 +3,7 @@ package SortAlgorithm;
 import static utils.Swap.swap;
 
 /**
- * @Description TODO
+ * @Description 冒泡排序
  * @Author Jianhai Wang
  * @ClassName BubbleSort
  * @Date 2019/11/5 23:29

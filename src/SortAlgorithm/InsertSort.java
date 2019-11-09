@@ -3,7 +3,7 @@ package SortAlgorithm;
 import static utils.Swap.swap;
 
 /**
- * @Description TODO
+ * @Description 插入排序
  * @Author Jianhai Wang
  * @ClassName InsertSort
  * @Date 2019/11/5 23:26
