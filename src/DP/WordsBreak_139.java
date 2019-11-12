@@ -37,7 +37,7 @@ import java.util.Set;
 输出: false
  */
 
-public class WordsBread_139 {
+public class WordsBreak_139 {
     public static boolean worksBreak(String s, List<String> wordDict){
         //提高效率
         Set<String> wordDictSet=new HashSet(wordDict);
