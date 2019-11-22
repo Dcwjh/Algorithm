@@ -4,18 +4,23 @@
   - [LeetCode](#LeetCode)
   - [链表](#链表)
   - [动态规划](#动态规划)
+  - [贪心算法](#贪心算法)
   - [数组](#数组)
   - [排序](#排序)
   - [对数期](#对数器)
   - [字符串](#字符串)
-  - [贪心算法](#贪心算法)
+
+
+## LeetCode
+  - [拆分数组](./src/DP/WordsBread_139.java)
+  - [跳跃游戏I](./src/Array/CanJump_55.java)
 
 ## 链表
   - [两个单链表相交问题:](./src/LinkList/CircleLinkNode.java) [详情参考博客](https://blog.csdn.net/Dcwjh/article/details/102649895)
 
 ## 动态规划
     动态规划思想：
-    动态规划的每个阶段可以从之前的某个阶段的“某个”或“某些”转台得到，得到的这样状态即为“状态转移”
+    动态规划的每个阶段可以从之前的某个阶段的“某个”或“某些”转态得到，得到的这样状态即为“状态转移”
   - [三个经典背包问题](./src/DP/CB.java)
   - [带权活动选择问题](./src/DP/ActivityChoose.java)
   - [数组添加乘号使其值最大](./src/DP/InsertMultiplication.java) ([递归形式的解](./src/DP/InsertMulRecur.java))
@@ -27,6 +32,10 @@
   - [拆分数组II](./src/DP/WordsBreak_140.java)
   - [跳跃游戏I](./src/Array/CanJump_55.java)
   
+## 贪心算法
+  - [跳跃游戏I](./src/Array/CanJump_55.java)
+  - [买卖股票问题](./src/Array/MaxProfit_122.java)
+
 
 ## 数组
   - [消失的数组范围](./src/Array/MissingRanges.java)
@@ -49,11 +58,9 @@
 
 ## 字符串
   - [KMP](./src/StringAlgorithm/KMP.java)
+
   
-## LeetCode
-  - [拆分数组](./src/DP/WordsBread_139.java)
-  - [跳跃游戏I](./src/Array/CanJump_55.java)
+
   
-## 贪心算法
- - [跳跃游戏I](./src/Array/CanJump_55.java)
+
 
