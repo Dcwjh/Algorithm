@@ -26,16 +26,14 @@ public class Convert_6 {
         if(s.length() <= numRows || numRows == 1)
             return s;
         char[][] str = new char[numRows][s.length()];
-        int len = 0;
-        int row  = 0;
-        int col = 0;
-        while(true) {
-            for (; row < numRows; row++) {
+        int len = 0,row = 0,col = 0;
+        while(s.length()>len) {
+            while(row < numRows){
                 if(s.length() > len)
-                    str[row][col] = s.charAt(len++);
+                    str[row++][col] = s.charAt(len++);
+                else
+                    break;
             }
-            if(s.length() <= len)
-                break;
             col += 1;
             row -= 2;
             while (row > 0) {
@@ -44,17 +42,17 @@ public class Convert_6 {
                 else
                     break;
             }
-            if(s.length() <= len)
-                break;
         }
         print(str);
         StringBuilder newstr = new StringBuilder();
-        for(int i = 0; i < numRows; i++)
-            for(int j = 0; j < s.length();j++)
+        for(int i = 0; i < str.length; i++)
+            for(int j = 0; j < str[0].length;j++)
                 if(str[i][j]!=0)
                     newstr.append(str[i][j]);
-        return String.valueOf(newstr);
+//        return String.valueOf(newstr);
+        return newstr.toString();
     }
+
 
     public static void print(char[][] str){
         for(int i = 0; i < str.length; i++) {
@@ -65,5 +63,7 @@ public class Convert_6 {
     }
     public static void main(String[] args) {
         System.out.println(convert("ABCDE",4));
+        System.out.println(convert("LEETCODEISHIRING",4));
+        System.out.println(convert("LEETCODEISHIRING",3));
     }
 }
