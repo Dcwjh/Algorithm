@@ -1,7 +1,6 @@
 # Algorithm
    记录Leetcode，剑值Offer等算法题目
 # 目录
-  - [LeetCode](#LeetCode)
   - [链表](#链表)
   - [动态规划](#动态规划)
   - [数组](#数组)
@@ -20,7 +19,8 @@
   - [最长回文子序列](./src/DP/LongestPalindrome.java)
   - [树着色问题](./src/DP/TreeColor.java)
   - [NLP最大化所有词的质量和](./src/DP/QualityWords.java)
-  - [拆分数组](./src/DP/WordsBread_139.java)
+
+
 
 ## 数组
   - [消失的数组范围](./src/Array/MissingRanges.java)
@@ -42,7 +42,6 @@
 
 ## 字符串
   - [KMP](./src/StringAlgorithm/KMP.java)
-  
-## LeetCode
-  - [拆分数组](./src/DP/WordsBread_139.java)
 
+## 数组和矩阵问题
+  - [“之”字形打印数组](./src/Array/)

@@ -14,6 +14,8 @@ import static SortAlgorithm.InsertSort.insertSort;
 
 //对数器测试
     //测试用的
+
+
 public class ArraysJudges {
     //提供一个绝对正确的方法
     public static void comparator(int[] arr) {
