@@ -39,17 +39,17 @@ public class MinCost {
             lastSupply = Math.min(lastSupply + store, cost[i]);
             temp += lastSupply * supply[i];
         }
-        System.out.println("成本为" + temp);
+        System.out.println("成本为:" + temp);
         System.out.println(Arrays.toString(produce));
         return produce;
 
     }
 
     public static void main(String[] args) {
-//        int[] cost = {2,5,3};
-//        int[] supply = {2,4,5};
-        int[] cost = {2,3,5,9,4};
-        int[] supply = {2,2,1,3,5};
+        int[] cost = {2,5,3};
+        int[] supply = {2,4,5};
+//        int[] cost = {2,3,5,9,4};
+//        int[] supply = {2,2,1,3,5};
         greedy(cost,supply);
     }
 }
