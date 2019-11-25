@@ -38,6 +38,10 @@
     贪心算法求的不一定是最优解，但肯定是一个比较接近最优解的一个解。
   - [跳跃游戏I](./src/Array/CanJump_55.java)
   - [买卖股票问题](./src/Array/MaxProfit_122.java)
+  - [背包问题（可以拆分）](./src/GreedyAlgorithm/KnapsnackPart.java)
+  - [背包问题（不可以拆分）](./src/GreedyAlgorithm/Knapsnack.java)
+  - [产品生产使成本最小](./src/GreedyAlgorithm/MinCost.java)
+  - [建造最小基站](./src/GreedyAlgorithm/BaseStation.java)
 
 
 ## 数组
