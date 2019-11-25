@@ -1,7 +1,6 @@
 package GreedyAlgorithm;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * @Description 贪心算法：优先先择单位重量下价值最大的物品, 物品不能不拆分
