@@ -1,5 +1,5 @@
 # Algorithm
-   记录Leetcode，剑值Offer等算法题目
+   记录Leetcode，剑值Offer等算法题目(每天五道题)
 # 目录
   - [LeetCode](#LeetCode)
   - [链表](#链表)
