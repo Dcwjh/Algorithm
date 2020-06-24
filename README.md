@@ -2,6 +2,7 @@
    记录Leetcode，剑值Offer等算法题目(每天五道题)
 # 目录
   - [LeetCode](#LeetCode)
+  - [剑指Offer](#剑指offer)
   - [链表](#链表)
   - [动态规划](#动态规划)
   - [贪心算法](#贪心算法)
@@ -14,7 +15,9 @@
 ## LeetCode
   - [拆分数组](./src/DP/WordsBread_139.java)
   - [跳跃游戏I](./src/Array/CanJump_55.java)
-
+## LeetCode
+  - [数组中出现次数超过一数的数](./src/剑指offer/Interview39.java)
+  - [最小K个数](./src/剑指offer/Interview40.java)
 ## 链表
   - [两个单链表相交问题:](./src/LinkList/CircleLinkNode.java) [详情参考博客](https://blog.csdn.net/Dcwjh/article/details/102649895)
 
