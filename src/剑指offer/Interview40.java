@@ -57,6 +57,9 @@ public class Interview40 {
         return right;
     }
 
+    //todo 总结：while里面只能写left < right, 且后面的判断--++要写‘=’，不然会导致一直循环，因为碰见相等的就一直循环，状态不能更新了
+    //todo  最后需要把基点和中间的交换（right）,这个right的点是小于index所在的点，所以最后返回的就是right,其实就是基点所在的位置。
+
     private static void swap(int[] array, int left, int right){
         int temp = array[left];
         array[left] = array[right];
@@ -71,4 +74,6 @@ public class Interview40 {
      *          2. 删除最大数
      *          3. 插入新数值
      */
+
+
 }
