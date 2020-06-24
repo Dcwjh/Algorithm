@@ -11,6 +11,7 @@ package 剑指offer;
 
 
 public class Interview39 {
+    //思想：基于统计规律
     public int MoreThanHalfNum_Solution(int[] array) {
         if (array == null || array.length == 0)
             return 0;
@@ -36,6 +37,61 @@ public class Interview39 {
         if (count > array.length / 2)
             return array[index];
         return 0;
+    }
+
+    //基于快速排序的特点
+    //快速排序
+    //快速排序
+
+    public int MoreThanHalfNum_Solution2(int [] array) {
+        if(array == null || array.length == 0)
+            return 0;
+        int len = array.length;
+        int middle = len >> 1;
+        int index=0;
+        int left = 0;
+        int right = len - 1;
+        while(index!=middle){
+            index = parttion(array,  left, right);
+            if(index < middle){
+                left = index + 1;
+            } else
+                right = index - 1;
+        }
+        int number = 0;
+        for(int i = 0; i < array.length;i++ )
+            if(array[index] == array[i])
+                number++;
+        if(number > middle)
+            return array[index];
+        else
+            return 0;
+    }
+
+    private static int parttion(int[] array, int left, int right){
+        int index = left;
+        while(left < right){
+            if(array[left] > array[index] && array[right] < array[index]){
+                swap(array, left++, right--);
+            }
+            if(array[left] <= array[index])
+                left ++;
+            if(array[right] >= array[index])
+                right --;
+        }
+        swap(array,left,index);
+        return left;
+    }
+    private static void swap(int[] array, int left, int right){
+        int temp = array[left];
+        array[left] = array[right];
+        array[right] = temp;
+    }
+
+    //其他方法：排序找中文数
+
+    public static void main(String[] args) {
+
     }
 
 }
