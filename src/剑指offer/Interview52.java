@@ -103,7 +103,8 @@ public class Interview52 {
         return null;
     }
 
-    //简化版，   一共走有L1 + L2 + C步
+    //简化版，   一共走有L1 + L2 + C步.   若等长，则一次性就判断出来了，None==None，推出循环
+    //若不等长，则循环差几步，最后循环几轮，总能有一次是同步的。（取决于链表长度和链表长度差）
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;
         ListNode node1 = headA;
