@@ -1,7 +1,7 @@
 package 剑指offer;
 
 /**
- * @Description TODO
+ * @Description 判断是否是平衡二叉树
  * @Author Jianhai Wang
  * @ClassName Interview55_2
  * @Date 2020/6/28 14:18
