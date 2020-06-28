@@ -15,9 +15,27 @@
 ## LeetCode
   - [拆分数组](./src/DP/WordsBread_139.java)
   - [跳跃游戏I](./src/Array/CanJump_55.java)
-## LeetCode
+## 剑指offer
   - [数组中出现次数超过一数的数](./src/剑指offer/Interview39.java)
   - [最小K个数](./src/剑指offer/Interview40.java)
+  - [数据流中的中位数](./src剑指offer/Interview41.java)
+  - [连续数组中的最大和](./src剑指offer/Interview42.java)
+  - [1到n中出现1的次数](./src剑指offer/Interview43.java)
+  
+  - [数组中的逆序数对](./src剑指offer/Interview51.java)
+  - [两个链表的公共节点](./src剑指offer/Interview52.java)
+  - [在排序数组中查找数字](./src剑指offer/Interview53.java)
+  - [找出0到n-1却是的数字](./src剑指offer/Interview53_2.java)
+  - [数组中数值和下表相等的元素](./src剑指offer/Interview53_3.java)
+  - [二叉搜索树的第K大节点（树的中序遍历）](./src剑指offer/Interview54.java)
+  - [判断是否是平衡二叉树](./src剑指offer/Interview54_2.java)
+  - [数组中数字出现的次数](./src剑指offer/Interview56.java)
+  - [数组中唯一出现一次的数字](./src剑指offer/Interview56_2.java)
+  - [和为s的数字](./src剑指offer/Interview57.java)
+  - [和为s的连续正数序列](./src剑指offer/Interview57_2.java)
+  
+  
+
 ## 链表
   - [两个单链表相交问题:](./src/LinkList/CircleLinkNode.java) [详情参考博客](https://blog.csdn.net/Dcwjh/article/details/102649895)
 
