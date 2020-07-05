@@ -33,6 +33,6 @@ BFPRT算法步骤如下：
 
 # 时间复杂度分析
 
-![分析](./src/image/bfprt.png)
+![分析](../src/image/bfprt.png)
 
 
