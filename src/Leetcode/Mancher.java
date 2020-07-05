@@ -30,7 +30,7 @@ public class Mancher {
      *      2） i'   在L,R外    (ab[cdcba)t t tabc d c]F     O(1)
      *      3） i'   L压线   T[abcbak k kabcba]k
      */
-
+    //借助辅助数组求每个数据的回文半径，分为实轴和虚轴，虚轴就是为了让字符串不管是奇数个还是偶数个都能统一格式
     public static int maxLcpsLength(String str){
         if(str ==null|| str.length() == 0)
             return 0;
