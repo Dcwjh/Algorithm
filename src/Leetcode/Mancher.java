@@ -1,7 +1,7 @@
 package Leetcode;
 
 /**
- * @Description TODO
+ * @Description 最大回文序列的长度
  * @Author Jianhai Wang
  * @ClassName Mancher
  * @Date 2020/7/5 8:31
