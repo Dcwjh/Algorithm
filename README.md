@@ -12,9 +12,15 @@
   - [字符串](#字符串)
 
 
+
+
+
 ## LeetCode
   - [拆分数组](./src/DP/WordsBread_139.java)
   - [跳跃游戏I](./src/Array/CanJump_55.java)
+  - [滑动窗口1](./src/Leetcode/LeetCode239.java)
+  - [滑动窗口1](./src/Leetcode/MaxSubMin.java)
+  
 ## 剑指offer
   - [数组中出现次数超过一数的数](./src/剑指offer/Interview39.java)
   - [最小K个数](./src/剑指offer/Interview40.java)
@@ -33,6 +39,19 @@
   - [数组中唯一出现一次的数字](./src/剑指offer/Interview56_2.java)
   - [和为s的数字](./src/剑指offer/Interview57.java)
   - [和为s的连续正数序列](./src/剑指offer/Interview57_2.java)
+  - [反转字符串](./src/剑指offer/Interview58.java)
+  - [左旋转字符串](./src/剑指offer/Interview58_2.java)
+  - [滑动窗口的最大值](./src/剑指offer/Interview59.java)
+  - [队列最大值](./src/剑指offer/Interview59_2.java)
+  - [n个骰子的点数](./src/剑指offer/Interview60.java)
+  - [扑克牌中的顺子](./src/剑指offer/Interview61.java)
+  - [圆圈中最后剩下的数字](./src/剑指offer/Interview62.java)
+  - [股票的最大利润](./src/剑指offer/Interview63.java)
+  - [求1+2+…+n](./src/剑指offer/Interview64.java)
+  - [不用加减乘除做加法](./src/剑指offer/Interview65.java)
+  - [构建乘积数组](./src/剑指offer/Interview66.java)
+ 
+  
   
   
   
@@ -94,7 +113,15 @@
   - [BFPRT](./src/Leetcode/BFPRT.java)
   - [解决方法](./src/Leetcode/topk.md)
 
-  
+## 专题
+#### 左神
+1. 字符串处理（KMP, ）
+2. 滑动窗口
+3. 单调栈的应用
+- [求最大子矩阵的大小]()
+
+#### 滑动串口
+
 
   
 
