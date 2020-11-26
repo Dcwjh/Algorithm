@@ -21,5 +21,10 @@ public class Swap {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
+
+        //不用变量，
+//        nums[i] = nums[i] ^ nums[j];
+//        nums[j] = nums[i] ^ nums[j];
+//        nums[i] = nums[i] ^ nums[j];
     }
 }

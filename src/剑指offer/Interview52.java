@@ -11,18 +11,19 @@ import java.util.Stack;
  * @Date 2020/6/27 11:07
  * @Version 1.0
  */
-class ListNode{
-    int val;
-    ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 
 public class Interview52 {
     //方法一：暴力法，逐一比较 O(m+n)
+    class ListNode{
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
     public ListNode FindFirstCommonNode1(ListNode pHead1, ListNode pHead2) {
         ListNode p1 = pHead1;
         while(p1!=null){

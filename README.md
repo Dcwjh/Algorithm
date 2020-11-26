@@ -16,25 +16,31 @@
 
 
 ## LeetCode
-  - [拆分数组](./src/DP/WordsBread_139.java)
-  - [跳跃游戏I](./src/Array/CanJump_55.java)
-  - [滑动窗口1](./src/Leetcode/LeetCode239.java)
-  - [滑动窗口1](./src/Leetcode/MaxSubMin.java)
+
+  - [55.跳跃游戏I](./src/Array/CanJump_55.java)
+  - [139.拆分数组](./src/DP/WordsBread_139.java)
+  - [滑动窗口2](./src/Leetcode/MaxSubMin.java)
+  - [141.环形链表](./src/Leetcode/LeetCode_141.java)
+  - [155.最小栈](./src/Leetcode/LeetCode_155.java)
+  - [167. 两数之和 II - 输入有序数组](./src/Leetcode/LeetCode_167.java)
+  - [168](./src/Leetcode/LeetCode_168.java)
+  - [239.滑动窗口1](./src/Leetcode/LeetCode239.java)
   
 ## 剑指offer
+
+  - [最长回文子序列](./src/Leetcode/Mancher.java)
   - [数组中出现次数超过一数的数](./src/剑指offer/Interview39.java)
   - [最小K个数](./src/剑指offer/Interview40.java)
   - [数据流中的中位数](./src/剑指offer/Interview41.java)
   - [连续数组中的最大和](./src/剑指offer/Interview42.java)
   - [1到n中出现1的次数](./src/剑指offer/Interview43.java)
-  
   - [数组中的逆序数对](./src/剑指offer/Interview51.java)
   - [两个链表的公共节点](./src/剑指offer/Interview52.java)
   - [在排序数组中查找数字](./src/剑指offer/Interview53.java)
   - [找出0到n-1却是的数字](./src/剑指offer/Interview53_2.java)
   - [数组中数值和下表相等的元素](./src/剑指offer/Interview53_3.java)
   - [二叉搜索树的第K大节点（树的中序遍历）](./src/剑指offer/Interview54.java)
-  - [判断是否是平衡二叉树](./src/剑指offer/Interview54_2.java)
+  - [判断是否是平衡二叉树](./src/剑指offer/Interview55.java)
   - [数组中数字出现的次数](./src/剑指offer/Interview56.java)
   - [数组中唯一出现一次的数字](./src/剑指offer/Interview56_2.java)
   - [和为s的数字](./src/剑指offer/Interview57.java)
@@ -99,6 +105,8 @@
   - [插入排序](./src/SortAlgorithm/InsertSort.java)
   - [冒泡排序](./src/SortAlgorithm/BubbleSort.java)
   - [堆排序](./src/SortAlgorithm/HeapSort.java)
+  - [归并排序应用：小和问题](./src/SortAlgorithm/MinSum.java): 利用右子数组的有序性，减少比较次数
+  - [归并排序应用：逆数对问题](./src/SortAlgorithm/NumberOfInverse.java)：利用左子数组的有序性，减少比较次数
   
   
 ## 对数器
@@ -107,15 +115,16 @@
 ## 字符串
   - [KMP](./src/StringAlgorithm/KMP.java)
   - [KMP](./src/Leetcode/KMP.java)
-  - [Mancher:最大回文子序列](./src/Leetcode/Mancher.java)
+  - [Mancher:最大回文子序列](./src/StringAlgorithm/Manacher.java)
   
 ## Top-k问题
   - [BFPRT](./src/Leetcode/BFPRT.java)
   - [解决方法](./src/Leetcode/topk.md)
 
 ## 专题
+
 #### 左神
-1. 字符串处理（KMP, ）
+1. [字符串处理（KMP,马拉车算法 ）](./src/StringAlgorithm/Manacher.java)
 2. 滑动窗口
 3. 单调栈的应用
 - [求最大子矩阵的大小]()

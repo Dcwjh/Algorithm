@@ -7,12 +7,15 @@ package 剑指offer;
  * @ClassName Interview63
  * @Date 2020/6/29 11:42
  * @Version 1.0
+ *
+ *
+ * 关键点，找到股票最低价
  */
 
 
 public class Interview63 {
 
-    //关键点，找到股票最低价
+
     public int maxProfit(int[] prices) {
         if(prices == null || prices.length < 2)
             return 0;

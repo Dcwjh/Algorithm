@@ -45,7 +45,7 @@ public class QuickSort {
         int r = right;
 //        System.out.println("pivot: " + pivot + " 当前结果： " + Arrays.toString(nums));
 //        System.out.println("pivotIndex: " + pivotIndex + ";  l,r: " + l + " " + r);
-        while(l < r) {   //不能=     为什么？？？
+        while(l < r) {   //不能=     为什么？？？因为逻辑问题，若=,则在求解过程中必须要返回结果
             if(nums[l] > pivot && nums[r] < pivot){
                 swap(nums, l++, r--);
 //                System.out.println("排序过程：" + Arrays.toString(nums));

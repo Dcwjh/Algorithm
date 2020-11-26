@@ -4,7 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @Description TODO
+ * @Description 队列的最大值
+ * @Address  https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/
  * @Author Jianhai Wang
  * @ClassName Interview59_2
  * @Date 2020/6/30 16:18
@@ -42,4 +43,8 @@ public class Interview59_2 {
             maxQue.pollFirst();
         return queue.poll();
     }
+
+
+
+
 }

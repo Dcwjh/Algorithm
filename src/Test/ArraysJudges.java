@@ -83,7 +83,7 @@ public class ArraysJudges {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-           int[] arr3 = copyArray(arr1);
+            int[] arr3 = copyArray(arr1);
             insertSort(arr2);
             comparator(arr3);
             if (!isEqual(arr2, arr3)) {

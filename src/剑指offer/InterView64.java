@@ -1,7 +1,8 @@
 package 剑指offer;
 
 /**
- * @Description TODO
+ * @Description 求1+2+…+n
+ * @Address https://leetcode-cn.com/problems/qiu-12n-lcof/
  * @Author Jianhai Wang
  * @ClassName InterView64
  * @Date 2020/6/29 11:56

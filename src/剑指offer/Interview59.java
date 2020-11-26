@@ -3,7 +3,8 @@ package 剑指offer;
 import java.util.LinkedList;
 
 /**
- * @Description TODO
+ * @Description 滑动窗口的最大值
+ * @Address https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/
  * @Author Jianhai Wang
  * @ClassName Interview59
  * @Date 2020/6/30 11:08
