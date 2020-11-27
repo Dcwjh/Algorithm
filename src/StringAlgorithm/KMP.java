@@ -1,7 +1,7 @@
 package StringAlgorithm;
 
 /**
- * @Description KMP:返回目标和模式匹配的第一个子串的首字符位置
+ * @Description KMP:返回目标和模式匹配的第一个子串的首字符位置。 返回匹配到字符的首个索引。
  * @Author Jianhai Wang
  * @ClassName KMP
  * @Date 2019/11/6 13:51

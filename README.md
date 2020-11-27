@@ -8,7 +8,7 @@
   - [贪心算法](#贪心算法)
   - [数组](#数组)
   - [排序](#排序)
-  - [对数期](#对数器)
+  - [对数器](#对数器)
   - [字符串](#字符串)
 
 
@@ -24,7 +24,10 @@
   - [155.最小栈](./src/Leetcode/LeetCode_155.java)
   - [167. 两数之和 II - 输入有序数组](./src/Leetcode/LeetCode_167.java)
   - [168](./src/Leetcode/LeetCode_168.java)
+  - [198.打家劫舍](./src/DP/Rob_198.java)
+  - [213.打家劫舍II](./src/DP/Rob2_213.java)
   - [239.滑动窗口1](./src/Leetcode/LeetCode239.java)
+  - [454.四数之和](./src/Leetcode/FourSumCount_454.java)
   
 ## 剑指offer
 
@@ -78,6 +81,8 @@
   - [拆分数组I](./src/DP/WordsBread_139.java)
   - [拆分数组II](./src/DP/WordsBreak_140.java)
   - [跳跃游戏I](./src/Array/CanJump_55.java)
+  - [198.打家劫舍](./src/DP/Rob_198.java)
+  - [213.打家劫舍II](./src/DP/Rob2_213.java)
   
 ## 贪心算法
     总是做出局部最优的选择，寄希望这样的选择能选出全局最优解
