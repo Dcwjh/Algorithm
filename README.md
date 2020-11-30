@@ -27,7 +27,10 @@
   - [198.打家劫舍](./src/DP/Rob_198.java)
   - [213.打家劫舍II](./src/DP/Rob2_213.java)
   - [239.滑动窗口1](./src/Leetcode/LeetCode239.java)
+  - [303.区间和检索-数组不可变](./src/Leetcode/NumArray_303.java)
   - [454.四数之和](./src/Leetcode/FourSumCount_454.java)
+  - [746.使用最小花费爬楼梯](./src/Leetcode/MinCostClimbingStairs_746.java)
+  - [767.重构字符串](./src/Leetcode/ReorganizeString_767.java)
   
 ## 剑指offer
 
@@ -83,6 +86,7 @@
   - [跳跃游戏I](./src/Array/CanJump_55.java)
   - [198.打家劫舍](./src/DP/Rob_198.java)
   - [213.打家劫舍II](./src/DP/Rob2_213.java)
+  - [746.使用最小花费爬楼梯](./src/Leetcode/MinCostClimbingStairs_746.java)
   
 ## 贪心算法
     总是做出局部最优的选择，寄希望这样的选择能选出全局最优解

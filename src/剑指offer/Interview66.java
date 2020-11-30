@@ -1,6 +1,5 @@
 package 剑指offer;
 
-import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
 /**
  * @Description 构建乘积数组
