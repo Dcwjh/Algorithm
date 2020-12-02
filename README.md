@@ -17,6 +17,7 @@
 
 ## LeetCode
 
+  - [34. 在排序数组中查找元素的第一个和最后一个位置](./src/Leetcode/SearchRange_34.java)
   - [55.跳跃游戏I](./src/Array/CanJump_55.java)
   - [139.拆分数组](./src/DP/WordsBread_139.java)
   - [滑动窗口2](./src/Leetcode/MaxSubMin.java)
@@ -25,12 +26,15 @@
   - [167. 两数之和 II - 输入有序数组](./src/Leetcode/LeetCode_167.java)
   - [168](./src/Leetcode/LeetCode_168.java)
   - [198.打家劫舍](./src/DP/Rob_198.java)
+  - [201. 数字范围按位与](./src/Leetcode/RangeBitwiseAnd_201.java)
   - [213.打家劫舍II](./src/DP/Rob2_213.java)
   - [239.滑动窗口1](./src/Leetcode/LeetCode239.java)
   - [303.区间和检索-数组不可变](./src/Leetcode/NumArray_303.java)
   - [454.四数之和](./src/Leetcode/FourSumCount_454.java)
   - [746.使用最小花费爬楼梯](./src/Leetcode/MinCostClimbingStairs_746.java)
   - [767.重构字符串](./src/Leetcode/ReorganizeString_767.java)
+  - [1025.除数博弈](./src/Leetcode/DivisorGame_1025.java)
+  - [面试题 08.01. 三步问题](./src/Leetcode/WaysToStep_Interview_08_01.java)
   
 ## 剑指offer
 
