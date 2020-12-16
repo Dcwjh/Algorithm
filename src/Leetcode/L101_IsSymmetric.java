@@ -1,7 +1,6 @@
 package Leetcode;
 
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -17,6 +16,12 @@ import java.util.Queue;
 
 
 public class L101_IsSymmetric {
+    /**
+     *
+     * @param root
+     * @return
+     * @version 1.0
+     */
     public boolean isSymmetric_recursion(TreeNode root) {
         return isMirror(root, root);
     }
@@ -53,7 +58,90 @@ public class L101_IsSymmetric {
             q.add(t2.left);
         }
         return true;
+    }
 
+    /**
+     * @version 2.0
+     */
+
+    /**
+     * 错误思路： 中序遍历后判断是否回文
+     * 我是采用中序遍历，先LNR，再用RNL返回字符串，判断字符串是否相等的思路
+     * 错误用例： [1,2,2,2,null,2] ，改测试用例中序遍历是一个回文序列
+     *                             1
+     *                           /  \
+     *                         2      2
+     *                       / \     / \
+     *                      2   #   2   #
+     *                    / \      / \
+     *                   #  #     #  #
+     *
+     */
+    static StringBuilder sb1  = new StringBuilder();
+    static StringBuilder sb2  = new StringBuilder();
+
+    //LNR 和 LRN序列岂不是一样的
+    public static boolean isSymmetric1(TreeNode root) {
+            if(root == null) return true;
+            return LNR(root).equals(RNL(root));
+        }
+
+        private static String LNR(TreeNode root){
+            if(root == null)
+                return null;
+
+            if(root.left == null) sb1.append("#");
+            LNR(root.left);
+            sb1.append(root.val);
+            if(root.right == null) sb1.append("#");
+            LNR(root.right);
+            return sb1.toString();
+        }
+
+        private static String RNL(TreeNode root){
+            if(root == null)
+                return null;
+            if(root.right == null) sb2.append("#");
+            RNL(root.right);
+            sb2.append(root.val);
+            if(root.left == null) sb2.append("#");
+            RNL(root.left);
+            return sb2.toString();
+    }
+
+
+    /**
+     *
+     * @param args
+     * @version 1.0
+     */
+    public boolean isSymmetric2(TreeNode root) {
+            if(root == null) return true;
+            return recure(root.left, root.right);
+        }
+
+        private boolean recure(TreeNode left, TreeNode right){
+            if(left == null && right==null)
+                return true;
+            if(left == null || right == null)
+                return false;
+            if(left.val != right.val)
+                return false;
+            //仔细看，这里容易出错
+            return recure(left.left,right.right) && recure(left.right,right.left);
+    }
+
+
+
+
+
+    public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(1);
+        root1.left = new TreeNode(2);
+        root1.right = new TreeNode(2);
+        root1.left.right = new TreeNode(3);
+        root1.right.right = new TreeNode(3);
+        System.out.println(isSymmetric1(root1));
     }
 
 }
