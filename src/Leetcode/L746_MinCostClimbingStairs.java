@@ -28,7 +28,7 @@ public class L746_MinCostClimbingStairs {
         int pre2 = 0;
         int dp = 0;
         for (int num : cost) {
-            dp = num + Math.min(pre1, pre2);
+            dp = num + Math.min(pre1, pre2);  //当前台阶一定要上的
             pre1 = pre2;
             pre2 = dp;
         }

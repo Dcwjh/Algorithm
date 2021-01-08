@@ -12,22 +12,26 @@ package Leetcode;
 
 public class L3_LengthOfLongestSubstring {
     public int lengthOfLongestSubstring(String s) {
-        int max = 0;
-        int count = 0;
-        int[] temp = new int[256];
-        for(int start,end = 0; end < s.length(); end ++){
-            char c = s.charAt(end);
-            if(temp[c- 'A'] == 0) {
-                temp[c - 'A']++;
-                count ++;
-            } else {
-                max = Math.max(count,max);
-                count = 0;
-                start = end + 1;
-            }
+         int max = 0;
+         int[] ch = new int[256];
+         int start = 0;
+         char[] str = s.toCharArray();
+         for(int i = 0; i < s.length();i++){
+             if(ch[str[i]] == 0){
+                 ch[str[i]]++;
+                 max = Math.max(max, i - start + 1);
+             } else if(ch[str[i] ] == 1){
+                 while(str[start] != str[i]) {
+                     ch[str[start]]--;
+                     start++;
+                 }
+                 start++;
+             }
+         }
+         return max;
+    }
 
-        }
-
-        return 0;
+    public static void main(String[] args) {
+        System.out.println(new L3_LengthOfLongestSubstring().lengthOfLongestSubstring("tmmzuxt"));
     }
 }
