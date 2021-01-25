@@ -33,6 +33,28 @@ public class L19_RemoveNthFromEnd {
         return head;
     }
 
+    public ListNode removeNthFromEnd2 (ListNode head, int n) {
+        //第一种方法，先统计总个数，然后减去n，就得出要走的个数
+        //第二种办法加上一个头节点，想让一个节点走n步，然后两个指针同步
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode quick = head;
+        ListNode slow = dummy;
+        //快节点先走n步
+        for(int i = 0; i < n; i++){
+            quick = quick.next;
+        }
+
+        while(quick!=null){
+            slow = slow.next;
+            quick = quick.next;
+        }
+        slow.next = slow.next.next;
+
+        return dummy.next;
+    }
+
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);

@@ -49,8 +49,6 @@ public class L990_EquationsPossible {
         }
         return true;
 
-
-
     }
 
 
@@ -74,7 +72,7 @@ public class L990_EquationsPossible {
         }
         //彻底路径压缩
         public int find2(int x){
-            if(parent[x] != x){
+            if(x!= parent[x]){
                 parent[x] = find(parent[x]);
             }
             return parent[x];

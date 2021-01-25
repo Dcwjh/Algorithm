@@ -10,41 +10,53 @@ import static utils.Swap.swap;
  * @Version 1.0
  */
 
+//对于一个堆来说，要符合以下两个特点：1. 是一个完全二叉树。2. 所有父节点的值都要大于（或小于）子节点的值
+
+    //第一步：初始建堆：从0开始将元素填充到堆中
+    //第二步：取出最大值，放到最后一个位置。
+    // 第三步将最后一个位置的前一个位置填充到根节点，跳针堆
+
 
 public class HeapSort {
     public static void heapSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
-        for (int i = 0; i < arr.length; i++) {
+
+        int size = arr.length;
+        //至上而下建立大根堆
+        for (int i = 0; i < size; i++) {
             heapInsert(arr, i);
         }
-        int size = arr.length;
-        swap(arr, 0, --size);
+
+        //取值，重新调整
         while (size > 0) {
-            heapify(arr, 0, size);
             swap(arr, 0, --size);
+            heapify(arr,size);
         }
     }
 
     public static void heapInsert(int[] arr, int index) {
+        //建立过程中。index 找到自己的父亲（其父节点以上已经有序），只需要调整节点到自己该到的位置
         while (arr[index] > arr[(index - 1) / 2]) {
             swap(arr, index, (index - 1) / 2);
             index = (index - 1) / 2;
         }
     }
 
-    public static void heapify(int[] arr, int index, int size) {
+    public static void heapify(int[] arr, int size) {
+        int index = 0;
         int left = index * 2 + 1;
         while (left < size) {
-            int largest = left + 1 < size && arr[left + 1] > arr[left] ? left + 1 : left;
-            largest = arr[largest] > arr[index] ? largest : index;
-            if (largest == index) {
+            int largest = left + 1 < size && arr[left + 1] > arr[left] ? left + 1 : left; //找出左右子节点中最大值
+            largest = arr[largest] > arr[index] ? largest : index; //判断最大值和当前根节点比较。
+            if (largest == index) { //调整结束，后面还保持有序
                 break;
             }
             swap(arr, largest, index);
-            index = largest;
+            index = largest; //那里变化了index就在哪一边
             left = index * 2 + 1;
         }
     }
+
 }

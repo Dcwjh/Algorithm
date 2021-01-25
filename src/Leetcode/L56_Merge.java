@@ -1,6 +1,6 @@
 package Leetcode;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * @Description TODO
@@ -12,52 +12,55 @@ import java.util.Arrays;
 
 
 public class L56_Merge {
-    public static int[][] merge(int[][] intervals){
-        if(intervals == null || intervals.length == 1)
-            return intervals;
-        int len = 0;
-        for(int i = 0; i < intervals.length - 1; i++){
-            if(intervals[i][1] >= intervals[i+1][0]){
-                i++;
-            }
-            len++;
-        }
-        if(intervals[intervals.length - 2][1] < intervals[intervals.length - 1][0]){
-            len++;
-        }
-        System.out.println(len);
 
-        int[][] merger = new int[len][intervals[0].length];
-        for(int i = 0,j = 0; i < merger.length - 1; i++,j++){
-            if(intervals[i][1] >= intervals[i+1][0]){
-                merger[j][0] = Math.min(intervals[i][0], intervals[i+1][0]);
-                merger[j][1] = Math.max(intervals[i][1], intervals[i+1][1]);
-                i++;
-            }else{
-                merger[j][0] = intervals[i][0];
-                merger[j][1] = intervals[i][1];
-            }
+    class Node{
+        int start;
+        int end;
+        public Node(int start, int end){
+            this.start = start;
+            this.end = end;
         }
-//        if(intervals[intervals.length - 2][1] < intervals[intervals.length - 1][0])
-//        {
-//            merger[len - 1][0] = intervals[intervals.length - 1][0];
-//            merger[len - 1][1] = intervals[intervals.length - 1][1];
-//        }
-//        else{
-//            merger[len - 1][0] = intervals[intervals.length - 2][0];
-//            merger[len - 1][0] = intervals[intervals.length - 1][1];
-//        }
-        return merger;
-
     }
 
-    public static void main(String[] args) {
-        int[][]  intverals = new int[][]{
-                {1,3},
-                {2,6},
-                {8,10},
-                {15,18}
-        };
-        System.out.println(Arrays.deepToString(merge(intverals)));
+    public int[][] merge2(int[][] intervals) {
+        List<int []> res = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+
+        //如果我们按照区间的左端点排序，那么在排完序的列表中，可以合并的区间一定是连续的。
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            public int compare(int[] interval1, int[] interval2) {
+                return interval1[0] - interval2[0];
+            }
+        });
+        for(int i = intervals.length - 1; i >= 0; i--){
+            stack.add(new Node(intervals[i][0],intervals[i][1]));
+        }
+
+        while(stack.size() > 1){
+            Node node1 = stack.pop();
+            Node node2 = stack.pop();
+            if(node1.end < node2.start){
+                int[] temp = new int[2];
+                temp[0] = node1.start;
+                temp[1] = node1.end;
+                res.add(temp);
+                stack.push(node2);
+            } else if(node1.end <= node2.end){
+                Node node = new Node(node1.start, node2.end);
+                stack.push(node);
+            } else if(node1.end > node2.end){
+                stack.push(node1);
+            }
+        }
+        if(!stack.isEmpty()){
+            Node node = stack.pop();
+            int[] temp = new int[2];
+            temp[0] = node.start;
+            temp[1] = node.end;
+            res.add(temp);
+        }
+        return res.toArray(new int[res.size()][2]);
     }
+
+
 }

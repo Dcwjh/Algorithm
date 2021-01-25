@@ -39,13 +39,12 @@ public class QuickSort {
     }
 
     public static int partition(int[] nums, int left, int right) {
-        int pivotIndex = left;
-        int pivot = nums[pivotIndex];
+        int pivot = nums[left];
         int l = left + 1;
         int r = right;
 //        System.out.println("pivot: " + pivot + " 当前结果： " + Arrays.toString(nums));
 //        System.out.println("pivotIndex: " + pivotIndex + ";  l,r: " + l + " " + r);
-        while(l < r) {   //不能=     为什么？？？因为逻辑问题，若=,则在求解过程中必须要返回结果
+        while(l <= r) {   //
             if(nums[l] > pivot && nums[r] < pivot){
                 swap(nums, l++, r--);
 //                System.out.println("排序过程：" + Arrays.toString(nums));
@@ -54,7 +53,7 @@ public class QuickSort {
             if(nums[r] >= pivot) r--; //与pivot小的元素交换，返回r
         }
 
-        swap(nums, pivotIndex, r); //（l > r）
+        swap(nums, left, r); //（l > r）
 //        System.out.println("此轮结束：" + Arrays.toString(nums));
 //        System.out.println();
         return r;

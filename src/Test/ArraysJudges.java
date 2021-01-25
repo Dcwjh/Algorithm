@@ -1,5 +1,7 @@
 package Test;
 
+import SortAlgorithm.HeapSort;
+
 import java.util.Arrays;
 
 import static SortAlgorithm.InsertSort.insertSort;
@@ -84,7 +86,7 @@ public class ArraysJudges {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
             int[] arr3 = copyArray(arr1);
-            insertSort(arr2);
+            HeapSort.heapSort(arr2);
             comparator(arr3);
             if (!isEqual(arr2, arr3)) {
                 succeed = false;
