@@ -14,5 +14,6 @@ public class NC136 {
     public int[] solve (int[] preOrder, int[] inOrder) {
         // write code here
         //建立
+        return null;
     }
 }

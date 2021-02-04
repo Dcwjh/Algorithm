@@ -1,6 +1,6 @@
 package Test;
 
-import SortAlgorithm.HeapSort;
+import SortAlgorithm.NewQuickSort;
 
 import java.util.Arrays;
 
@@ -86,7 +86,7 @@ public class ArraysJudges {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
             int[] arr3 = copyArray(arr1);
-            HeapSort.heapSort(arr2);
+           NewQuickSort.newQuickSort(arr2);
             comparator(arr3);
             if (!isEqual(arr2, arr3)) {
                 succeed = false;

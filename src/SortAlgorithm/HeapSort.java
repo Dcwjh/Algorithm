@@ -31,23 +31,24 @@ public class HeapSort {
 
         //取值，重新调整
         while (size > 0) {
-            swap(arr, 0, --size);
+            swap(arr, 0, --size); //大根堆第一个选取，调换给最后一个。每次取出第一个
             heapify(arr,size);
         }
     }
 
     public static void heapInsert(int[] arr, int index) {
-        //建立过程中。index 找到自己的父亲（其父节点以上已经有序），只需要调整节点到自己该到的位置
+        //建立过程中。index 找到自己的父亲（其父节点以上已经有序），只需要调整节点到自己该到的位置。大根堆，自己比父节点大，调换位置，在找到上一个父节点
         while (arr[index] > arr[(index - 1) / 2]) {
             swap(arr, index, (index - 1) / 2);
             index = (index - 1) / 2;
         }
     }
 
-    public static void heapify(int[] arr, int size) {
+    public static void heapify(int[] arr, int size) { //调整
         int index = 0;
         int left = index * 2 + 1;
         while (left < size) {
+            //调整只需要调整一边
             int largest = left + 1 < size && arr[left + 1] > arr[left] ? left + 1 : left; //找出左右子节点中最大值
             largest = arr[largest] > arr[index] ? largest : index; //判断最大值和当前根节点比较。
             if (largest == index) { //调整结束，后面还保持有序
