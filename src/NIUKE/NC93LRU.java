@@ -14,7 +14,7 @@ import java.util.Map;
  */
 
 
-public class NC93 {
+public class NC93LRU {
     //set操作复杂度为O(1), 即插入，删除为1， 链表操作
     //get操作复杂度为O(1),数组或者hash
     class Node{

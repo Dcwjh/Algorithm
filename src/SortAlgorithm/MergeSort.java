@@ -22,6 +22,7 @@ public class MergeSort {
             return;
         }
         int mid = left + ((right - left) >> 1);
+        //分为左部分和右部分
         mergeSort(arr, left, mid);
         mergeSort(arr, mid + 1, right);
         merge(arr, left, mid, right);

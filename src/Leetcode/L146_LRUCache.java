@@ -101,6 +101,7 @@ public class L146_LRUCache {
         node.pre = tail.pre;
         tail.pre.next = node;
         tail.pre  = node;
+
     }
 
     /*

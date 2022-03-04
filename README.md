@@ -16,11 +16,38 @@
   - [双指针](#双指针)
   - [题目考频](#题目考频)
   - [并查集](#并查集)
+  - [前缀和](#前缀和)
+  - [dfs and bfs](#dfs and bfs)
+  - [SQL](#SQL)
+  
 
+## 前缀和
+  - [523. 连续的子数组和](./src/Leetcode/L523连续的子数组和.java) 
+  - [560. 和为K的子数组](./src/Leetcode/L560和为K的子数组.java)
+  - [525. 连续数组](./src/Leetcode/L525连续数组.java)
+  - [303. 区域和检索 - 数组不可变](./src/Leetcode/L303_NumArray.java)
+  - [1004. 最大连续1的个数 III](./src/Leetcode/L1004最大连续1的个数III.java): 前缀和 + 二分法，双指针（滑动窗口）
+  - [1480. 一维数组的动态和](./src/Leetcode/L1480一维数组的动态和.java)
+  - [面试题 17.24. 最大子矩阵](./src/Leetcode/Inteview1724最大子矩阵.java):前缀和+dp,压锁成一维矩阵求解
+  - [209. 长度最小的子数组](./src/Leetcode/L209_MinSubArrayLen.java)
+  1744，
+  剑指offer66，238，304，1310，
+  1442，974，995，862，1074，
+  剑指offer012,1738,1371,1109,1838,1208,1314
+  528,1732,930,724,1889,1737,1856,1524,1413,1423,1893,mianshi17.05,1588,1930,
+  1590,1674,1177,1292,,370,1094,1124
 
-
-
-
+## dfs and bfs
+  - [200. 岛屿数量](./src/Leetcode/L200岛屿数量.java): dfs
+  - [199. 二叉树的右视图](./src/Leetcode/L199二叉树的右视图.java): dfs + bfs
+  - [124. 二叉树中的最大路径和](./src/Leetcode/L124二叉树中的最大路径和.java):dfs，hard的原因是因为单个节点也可以是路径
+  - [剑指 Offer 13. 机器人的运动范围](./src/剑指offer/Interview13.java)
+  - [226. 翻转二叉树](./src/Leetcode/L226翻转二叉树.java):dfs
+  - [543. 二叉树的直径](./src/Leetcode/L543二叉树的直径.java):dfs
+   ### 小岛问题
+   下面四道题都可以使用常规的 DFS 来做。 并且递归的方向都是上下左右四个方向。更有意思的是，都可以采用原地修改的方式，来减少开辟 visited 的空间。
+   - [200. 岛屿数量](./src/Leetcode/L200岛屿数量.java): dfs
+   - [695. 岛屿的最大面积](./src/Leetcode/L695岛屿的最大面积.java)
 ## LeetCode
   - [3.无重复字符的最长子串](./src/Leetcode/L3_LengthOfLongestSubstring.java):滑动窗口，双指针
   - [6. Z 字形变换](./src/Leetcode/L6_Convert.java)
@@ -136,8 +163,43 @@
   
 
 ## 链表
+  - [链表总结](./src/LinkList/链表总结.md)
   - [两个单链表相交问题:](./src/LinkList/CircleLinkNode.java) [详情参考博客](https://blog.csdn.net/Dcwjh/article/details/102649895)
-
+  - [2. 两数相加 ](./src/LinkList/L2_AddTwoNumbers.java)
+  - [19. 删除链表的倒数第 N 个结点](./src/LinkList/L19_RemoveNthFromEnd.java)
+  - [21. 合并两个有序链表](./src/LinkList/L21_MergeTwoLists.java)
+  - [23. 合并K个升序链表](./src/LinkList/L23_MergeKLists.java)
+  - [24. 两两交换链表中的节点](./src/LinkList/L24_SwapPairs.java)
+  - [25. K 个一组翻转链表](./src/LinkList/L25_ReverseKGroup.java)
+  - [61. 旋转链表](./src/LinkList/L61_RotateRight.java)
+  - [82. 删除排序链表中的重复元素 II](./src/LinkList/L82_DeleteDuplicates.java)
+  - [83. 删除排序链表中的重复元素](./src/LinkList/L83_DeleteDuplicates.java)
+  - [86. 分隔链表](./src/LinkList/L86_Partition.java)
+  - [92. 反转链表 II](./src/LinkList/L92_ReverseBetween.java)
+  - [109. 有序链表转换二叉搜索树](./src/LinkList/L109_SortedListToBST.java)
+  - [114. 二叉树展开为链表](./src/LinkList/L114_Flatten.java)
+  - [138. 复制带随机指针的链表](./src/LinkList/L138_CopyRandomList.java)
+  - [141. 环形链表](./src/LinkList/L141_HasCycle.java)
+  - [142. 环形链表 II](./src/LinkList/L142_DetectCycle.java)
+  - [143. 重排链表](./src/LinkList/L143_ReorderList.java)
+  - [146. LRU 缓存机制](./src/LinkList/L146_LRUCache.java)
+  - [147. 对链表进行插入排序](./src/LinkList/L147_InsertionSortList.java)
+  - [148. 排序链表](./src/LinkList/L148_SortList.java)
+  - [160. 相交链表](./src/LinkList/L160_GetIntersectionNode.java)
+  - [203. 移除链表元素](./src/LinkList/L203_RemoveElements.java)
+  - [206. 反转链表](./src/LinkList/L206_ReverseList.java)
+  - [234. 回文链表](./src/LinkList/L234_IsPalindrome.java)
+  - [237. 删除链表中的节点](./src/LinkList/L237_DeleteNode.java)
+  - [328. 奇偶链表](./src/LinkList/L238_OddEvenList.java)
+  - [445. 两数相加 II](./src/LinkList/L445_AddTwoNumbers.java)
+  - [1669. 合并两个链表](./src/LinkList/L1669_MergeInBetween.java)
+  
+  
+  
+  
+  
+  
+  
 ## 动态规划
     动态规划思想：
     动态规划的每个阶段可以从之前的某个阶段的“某个”或“某些”转态得到，得到的这样状态即为“状态转移”
@@ -334,6 +396,10 @@ for 快指针 in 可迭代集合
 721
 765
 952
+
+
+## SQL
+- [175. 组合两个表](./src/SQL/L175.md)
 
 
 ## 题目考频：

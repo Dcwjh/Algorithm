@@ -27,10 +27,6 @@ public class NewQuickSort {
         }
     }
 
-
-
-
-
     //基准数据不能动，等到最后找到合适的位置交换
 
     public static int[] partition(int[] nums, int left, int right){
